@@ -1,0 +1,56 @@
+<html lang="en-US">
+<head>
+	<title>Example - Class 3</title>
+<style>
+.city{
+	float:left;
+	margin:5px;
+	padding:15px;
+	width:300px;
+	height:300px;
+	border:1px solid black;
+	
+	
+}
+#w{
+	width: 100%;
+}
+.image{
+	width:250px;
+	height:250px;
+}
+
+@media screen and (max-width: 600px){
+.city{	background-color:pink;}
+.city{ width: 100% !important ;
+		border: 1px solid pink;
+		}
+.image{ width:50px; height:50px;}
+		
+}
+@media (min-width: 600px) and (max-width: 900px){
+	.city{background-color: red;
+	}
+	.image{ width:150px;
+			height:150px;}	
+	}
+
+@media (min-width: 900px) and (max-width: 1400px){
+	.city{background-color: purple;}	
+}
+</style>
+</head>
+<body>
+
+<div class="city">
+Class 3 
+<br /><br /><br />
+</div>
+<div class="city">
+<img id="w" src="http://25.media.tumblr.com/tumblr_madd3fcSJB1qelx4lo1_500.jpg">
+</div>
+<div class="city">
+Hands on 
+</div>
+</body>
+</html>

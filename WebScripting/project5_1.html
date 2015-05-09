@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>Untitled</title>
+</head>
+
+<body>
+<script type="text/javascript">
+	function check()
+	{
+	if(document.getElementById("name").value==""){
+		alert("Please enter your name.");
+	}
+	if(password.value==""){
+		alert("Please enter your password.");
+	}
+	if(!decade.checked && !century.checked && !millennium.checked && !milligram.checked){
+		alert("Please check one of the radio buttons.");
+	}
+	if(!Baseball.checked && !Tennis.checked && !Volleyball.checked && !Football.checked){
+		alert("Please at least check one of the check boxes.");
+	}
+
+	}
+</script>
+
+<form action="formhandler.php" method="post">
+
+User<br>
+<input type="text" id="name" name="name" value="" tabindex="3" size="30" maxlength="40" ><br><br>
+
+Password<br>
+<input type="password" name="password" id="password" size="30" />
+
+<br><br><fieldset><legend>
+Which word means a "period of 100 years"?<br>
+</legend>
+
+<input type="radio" name="scale" id="decade" value="decade"> decade<br>
+<input type="radio" name="scale" id="century" value="century"> century<br>
+<input type="radio" name="scale" id="millennium" value="millennium"> millennium<br>
+<input type="radio" name="scale" id="milligram" value="milligram"> milligram<br>
+</fieldset>
+<br><br>
+Favorite Games:<br>
+<input type="checkbox" name="game" id = "Baseball" value="Baseball"/>Baseball
+<input type="checkbox" name="game" id = "Tennis" value="Tennis"/>Tennis
+<input type="checkbox" name="game" id = "Volleyball" value="Volleyball"/>Volleyball
+<input type="checkbox" name="game" id = "Football" value="Football"/>Football<br><br>
+
+<input type="submit" name="submit" id="submit" value="Submit"/
+onclick = "check()"> 
+<input type="reset" name="reset" id="reset" value="Reset"/>
+</form>
+
+</body>
+</html>

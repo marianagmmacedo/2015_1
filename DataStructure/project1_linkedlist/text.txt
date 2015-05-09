@@ -1,0 +1,32 @@
+String name, String chapter, String date, String name, String deadline, String issues
+Cancelled, NONE, 1/27/2015, null, null, null 
+Introduction, Chapter 1, 1/29/2015, null, null, null
+Algorithm Analysis, Chapter 1 and 2, 2/3/2015, null, null, null
+Lists, Chapter 4, 2/5/2015, null, null, null
+Stacks, Chapter 4, 2/10/2015, null, null, null
+Queues, Chapter 4, 2/12/2015, null, null, null
+Recursion, Chapter 2, 2/17/2015, null, null, null
+Dynamic Programming, Chapter 2, 2/20/2015, null, null, null
+Divide & Conquer, Chapter 2, 2/24/2015, null, null, null
+Divide & Conquer, Chapter 2, 2/26/2015, null, null, null
+Sorting, Chapter 7, 3/3/2015, null, null, null
+Sorting, Chapter 7, 3/5/2015, null, null, null
+Review, Chapter 1,2,3,4,5,6 and 7, 3/10/2015, null, null, null
+Midterm Exam, NONE, 3/12/2015, null, null, null
+Spring Break, NONE, 3/17/2015, null, null, null
+Spring Break, NONE, 3/19/2015, null, null, null
+Heaps, Chapter 5, 3/24/2015, null, null, null
+Heaps, Chapter 5, 3/26/2015, null, null, null
+Heaps, Chapter 5, 3/31/2015, null, null, null
+Trees, Chapter 5 and 6, 4/2/2015, null, null, null
+BST, Chapter 6, 4/7/2015, null, null, null
+AVL, Chapter 13, 4/9/2015, null, null, null
+Splay and 2-3 trees, Chapter 13, 4/14/2015, null, null, null
+Hashing, Chapter 9, 4/16/2015, null, null, null
+Greedy algorithms, Chapter , 4/21/2015, null, null, null
+Greedy algorithms, Chapter , 4/23/2015, null, null, null
+NP-completeness, Chapter , 4/28/2015, null, null, null
+Presentation, Chapter , 4/30/2015, null, null, null
+Study Day, NONE, 5/5/2015, null, null, null
+Study Day, NONE, 5/7/2015, null, null, null
+Final Exam, NONE, 5/12/2015, null, null, null

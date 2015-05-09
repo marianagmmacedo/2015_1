@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Example 11</title>
+</head>
+<body>
+	<label>Name: </label>
+	<input type="text" name="nameBox" id="nameBox" size="20"><br>
+	<label >Income:&nbsp;</label>
+	<input type="text" name="incomeBox" id="incomeBox" size="20"><br>
+	<label>TaxRate:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+	<input type="text" name="taxRateBox" id="taxRateBox" size="20"><br>
+	<input type="button" value="Click Me" size="20" onclick="f()"><br>
+	
+	<script type="text/javascript">
+		function f(){
+			var result = incomeBox.value -((incomeBox.value)*(taxRateBox.value));
+			alert(incomeBox.value + " - " + incomeBox.value + " * " + taxRateBox.value + " = " + result);
+			alert(nameBox.value + " net is: " + result);
+		}
+	</script>
+</body>
+</html>

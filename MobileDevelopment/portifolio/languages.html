@@ -1,0 +1,91 @@
+<html>
+<head>
+	<title>Mariana Macedo</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta http-equiv="cleartype" content="on">
+
+  <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+  <!--[if IE]>
+      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <![endif]-->
+<style>
+.background {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    width:100%;height:100%;
+    overflow: hidden;
+    }
+  .background iframe {
+        width:100%;height:100%;
+    }
+</style>
+</head>
+<body>
+  
+	<header class="app-bar promote-layer">
+		<button class="menu">
+			<img src="http://www.evine.com/images/store1/publish/faq_widget/Android_app_icon.png">
+			</button>
+		<h1 class="logo">Languages</h1>
+	</header>
+		<nav class="navdrawer-container promote-layer"><ul><li><a href="homePortifolio.html">Education</a></li><li><a href="technicalskills.html">Skills</a></li><li><a href="academicprojects.html">Projects</a></li><li><a href="publications.html">Publications</a></li><li><a href="workexperience.html" >Work</a></li><li><a href="activities.html">Activities</a></li><li><a href="languages.html" >Languages</a></li></ul></nav>
+		<section class="main-content"></section>
+	<script>
+	    var navdrawerContainer = document.querySelector('.navdrawer-container');
+      var appbarElement = document.querySelector('.app-bar');
+      var menuBtn = document.querySelector('.menu');
+      menuBtn.addEventListener('click', function() {
+        var isOpen = navdrawerContainer.classList.contains('open');
+        if(isOpen) {
+          appbarElement.classList.remove('open');
+          navdrawerContainer.classList.remove('open');
+          
+        } else {
+          appbarElement.classList.add('open');
+          navdrawerContainer.classList.add('open');
+          
+        }
+      }, true);</script><script>var menuBtn = document.querySelector('.menu');
+      menuBtn.addEventListener('click', function() {
+        sampleCompleted('appbar-navdrawer-sample1.html-menubtnclick');
+      }, true);</script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='http://www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-24532603-1');ga('send','pageview');
+
+    var isCompleted = {};
+    function sampleCompleted(sampleName){
+      if (ga && !isCompleted.hasOwnProperty(sampleName)) {
+        ga('send', 'event', 'WebCentralSample', sampleName, 'completed'); 
+        isCompleted[sampleName] = true;
+      }
+    }
+    </script>
+    
+  
+
+    <div class="activities">
+    	 <br /><br />
+       Languages
+      <br /><br /><br />
+      <ul>
+          <li>Portuguese</li>
+          <br/>
+          <li>English</li>
+          <br/>
+          <li>Spanish</li>
+      </ul>
+    </div>
+    <div class="footer">Mariana Gomes da Motta Macedo - marianagmmacedo@gmail.com</div>
+<div class="background">
+<iframe src="test.html" />
+</div>
+</body>
+</html>

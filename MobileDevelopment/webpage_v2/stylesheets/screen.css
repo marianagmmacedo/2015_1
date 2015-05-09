@@ -1,0 +1,242 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 61, ../../../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+input[type="text"]:-moz-placeholder {
+  color: #bfbfbf;
+  font-style: italic;
+}
+/* line 64, ../../../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+input[type="text"]::-moz-placeholder {
+  color: #bfbfbf;
+  font-style: italic;
+}
+/* line 67, ../../../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+input[type="text"]:-ms-input-placeholder {
+  color: #bfbfbf;
+  font-style: italic;
+}
+/* line 56, ../../../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+input[type="text"]::-webkit-input-placeholder {
+  color: #bfbfbf;
+  font-style: italic;
+}
+
+/* line 22, ../sass/screen.scss */
+.gradient-example {
+  width: 80px;
+  height: 80px;
+  background: purple;
+  margin: 1em 1em 0 0;
+}
+
+/* line 28, ../sass/screen.scss */
+#h-gradient {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2RkZGRkZCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(100%, #dddddd));
+  background-image: -moz-linear-gradient(left, #ffffff, #dddddd);
+  background-image: -webkit-linear-gradient(left, #ffffff, #dddddd);
+  background-image: linear-gradient(to right, #ffffff, #dddddd);
+}
+
+/* line 31, ../sass/screen.scss */
+body {
+  background: pink;
+}
+
+/* line 35, ../sass/screen.scss */
+.has-custom-shadow {
+  text-shadow: rgba(0, 0, 255, 0.2) 1px 1px 0, rgba(0, 0, 255, 0.2) 2px 2px 0, rgba(0, 0, 255, 0.2) 3px 3px 0;
+}
+
+/* line 39, ../sass/screen.scss */
+.container {
+  perspective: 50px;
+  border: 1px solid black;
+}
+
+/* line 43, ../sass/screen.scss */
+.transformed {
+  transform: rotateY(50deg);
+  background-color: pink;
+}
+
+/* line 47, ../sass/screen.scss */
+.child {
+  transform-origin: top left;
+  transform: rotateX(40deg);
+  background-color: purple;
+}
+
+/* line 52, ../sass/screen.scss */
+header {
+  margin: 20px;
+}
+/* line 55, ../sass/screen.scss */
+header table {
+  width: 100%;
+  border: double;
+  table-layout: fixed;
+  text-align: center;
+  text-align: center;
+}
+/* line 64, ../sass/screen.scss */
+header h1, header h3 {
+  text-align: center;
+  default-rotate: 45deg;
+}
+
+@extends .h1;
+/* line 71, ../sass/screen.scss */
+h2 {
+  text-align: center;
+}
+
+/* line 75, ../sass/screen.scss */
+.box-shadow-example div {
+  width: 550px;
+  height: 100px;
+  background: silver;
+  margin: 20px;
+  padding: 10px;
+}
+
+/* line 84, ../sass/screen.scss */
+#box-shadow-custom-multiple {
+  -moz-box-shadow: rgba(255, 0, 0, 0.7) 0 0 25px, rgba(255, 255, 255, 0.4) 0 0 3px 1px inset;
+  -webkit-box-shadow: rgba(255, 0, 0, 0.7) 0 0 25px, rgba(255, 255, 255, 0.4) 0 0 3px 1px inset;
+  box-shadow: rgba(255, 0, 0, 0.7) 0 0 25px, rgba(255, 255, 255, 0.4) 0 0 3px 1px inset;
+}
+
+/* line 87, ../sass/screen.scss */
+table {
+  width: 500px;
+}
+
+/* line 92, ../sass/screen.scss */
+ul {
+  font-size: 20px;
+  margin: 60px;
+}
+
+/* line 97, ../sass/screen.scss */
+img {
+  height: 200px;
+  width: 200px;
+}
+
+/* line 105, ../sass/screen.scss */
+nav ul {
+  padding: 0;
+  margin: -.5em;
+  min-width: 100%;
+  /* fix for old Firefox */
+  display: -webkit-flex;
+  display: flex;
+}
+/* line 112, ../sass/screen.scss */
+nav li {
+  background: #FF00CC;
+  margin: .5em;
+  display: inline-block;
+  /* non-flexbox browsers */
+  -webkit-flex-grow: 50%;
+  flex-grow: 50%;
+}
+
+/* line 121, ../sass/screen.scss */
+a:link {
+  color: blue;
+}
+
+/* line 124, ../sass/screen.scss */
+a:visited {
+  color: purple;
+}
+
+/* line 127, ../sass/screen.scss */
+a:hover {
+  color: yellow;
+}
+
+/* line 130, ../sass/screen.scss */
+a:active {
+  color: red;
+}
+
+/* line 134, ../sass/screen.scss */
+.border-radius-example {
+  width: 400px;
+  height: 20px;
+  background: purple;
+  margin: 20px;
+  padding: 5px;
+  color: white;
+}
+
+/* line 145, ../sass/screen.scss */
+div#b {
+  position: fixed;
+  top: 160px;
+  right: 0;
+  width: 400px;
+  height: 200px;
+  background: url("http://www.allgraphics123.com/graphics/smile/smile07.gif") 0 0 no-repeat;
+  -webkit-animation: mymove 5s infinite;
+  /* Chrome, Safari, Opera */
+  animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+  0% {
+    top: 160px;
+    right: 0px;
+  }
+  25% {
+    top: 200px;
+    right: 100px;
+  }
+  75% {
+    top: 50px;
+  }
+  100% {
+    top: 100px;
+  }
+}
+/* Standard syntax
+@keyframes mymove {
+    0%   {top: 160px; right: 0px}
+    25%  {top: 200px; right: 100px}
+    75%  {top: 50px}
+    100% {top: 100px;}
+}
+ */
+/* line 175, ../sass/screen.scss */
+#border-radius-top-right {
+  -moz-border-radius-topright: 25px;
+  -webkit-border-top-right-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+/* line 178, ../sass/screen.scss */
+.example {
+  padding: 2em;
+}
+/* line 180, ../sass/screen.scss */
+.example div {
+  background-color: pink;
+  border: 10px solid rgba(255, 0, 0, 0.5);
+  padding: 3px;
+  text-align: center;
+  margin-bottom: 2em;
+}
+/* line 187, ../sass/screen.scss */
+.example #border-box {
+  -moz-background-clip: border;
+  -o-background-clip: border-box;
+  -webkit-background-clip: border;
+  background-clip: border-box;
+}

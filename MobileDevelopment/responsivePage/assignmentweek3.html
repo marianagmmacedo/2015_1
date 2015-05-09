@@ -1,0 +1,415 @@
+<html>
+<head>
+<title>Brazil City's Webpage</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="cleartype" content="on">
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="base.css">
+<title>App Bar &amp; Nav Drawer Sample</title>
+<meta name="msapplication-tap-highlight" content="no">
+<style>
+
+      body {
+        position: relative;
+
+        font-family: 'Roboto', sans-serif;
+        font-weight: 200;
+        
+        background-color: silver;
+
+        box-sizing: border-box;
+
+        overflow: hidden;
+      }
+
+	.city{
+		float:left;
+		margin:20px;
+		padding:15px;
+		width:300px;
+		height:300px;
+		border:1px solid black;
+
+	}
+	.w{
+		width:200px;
+		height:200px;
+	}
+	a:hover{
+	color:white;
+	}
+	a:visited{
+	color:white;
+	}
+	a:link{
+	color:white;
+	}
+	a:active{
+	color:white;
+	}
+
+	@media screen and (max-width: 600px){
+	.city{	background-color:pink;}
+	.city{ width: 97% !important ;
+			border: 1px solid black;
+			
+			}
+	.w{ width:95%;}
+
+			
+	}
+	@media (min-width: 600px) and (max-width: 900px){
+		.city{background-color: red; 
+		}
+		.w{ width:100%;}
+	}
+	@media all and (min-width: 900px){
+		.city{background-color: green;}
+		.w{ width:100%;}	
+	}
+
+     .app-bar {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        
+        width: 100%;
+        height: 60px;
+
+        -ms-flex-direction: row;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+
+        position: relative;
+        
+        top: 0;
+        left: 0;
+
+        background-color: pink;
+     }
+
+      .app-bar.open {
+        -webkit-transform: translate(250px,0);
+        transform: translate(250px,0);
+      }
+
+      .app-bar .logo {
+        -ms-flex: 1;
+        -webkit-flex: 1;
+        flex: 1;
+        
+        font-size: 20px;
+        line-height: 60px;
+        
+        margin: 0 16px;
+        
+        color: #fefefe;
+
+        float: none;
+        max-width: none;
+      }
+
+      .app-bar .logo a {
+        text-decoration: none;
+        color: inherit;
+        font-weight: normal;
+      }
+
+      .app-bar-actions  {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        
+        -ms-flex-direction: row;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+      }
+
+      .app-bar button {
+        width: 60px;
+        height: 60px;
+        
+        background-image: none;
+        background-color: transparent;
+        
+        border: none;
+
+        padding: 0;
+
+        -webkit-transition: background-color 0.2s ease-out;
+        transition: background-color 0.2s ease-out;
+      }
+
+      .app-bar button img {
+        width: 60px;
+        height: 60px;
+      }
+
+      .app-bar button:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      .app-bar button:focus {
+        background-color: rgba(255, 255, 255, 0.2);
+        outline: 0;
+      }
+
+      .app-bar button:active {
+        background-color: rgba(255, 255, 255, 0.4);
+      }
+
+      .search {
+        display: none;
+        
+        width: 300px;
+        height: 60px;
+        
+        padding: 16px;
+        margin: 0;
+        
+        box-sizing: border-box;
+        
+        border: none;
+        
+      }
+
+      .promote-layer {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      @media all and (min-width: 1200px) {
+        
+        body {
+          padding: 10px;
+        }
+        
+        .app-bar {
+          display: block;
+          
+          height: 25px;
+          
+          padding: 0 16px;
+          margin-bottom: 16px;
+          
+          box-sizing: border-box;
+          
+          background-color: transparent;
+        }
+        
+        .app-bar .logo {
+          float: left;
+          
+          margin: 0;
+          
+          font-size: 70px;  
+          line-height: 100px;
+        }
+        
+        .app-bar-actions {
+          float: right;
+          
+          margin: 20px 0;
+        }
+        
+        .app-bar:after {
+          content: ' ';
+          
+          display:block;
+          height: 0;
+          overflow: hidden;
+          
+          clear: both;
+        }
+        
+        .search {
+          display: block;
+          
+          padding-left: 16px;
+        }
+        
+        button.menu {
+          display: none;
+        }
+        
+        nav {
+          display: block;
+
+          margin-top: 130px;
+        }
+      }
+
+      .navdrawer-container {
+        /*position: fixed;*/
+        position: absolute;
+        
+        width: 250px;
+        height: 100%;
+        top: 0px; left: 0px;
+        
+        background-color: pink;
+        
+        color: #fefefe;
+
+        -webkit-transform: translate(-250px,0);
+        transform: translate(-250px,0);
+      }
+
+      .navdrawer-container.open {
+        -webkit-transform: translate(0,0);
+        transform: translate(0,0);
+      }
+
+      .app-bar, .navdrawer-container {
+        -webkit-transition: -webkit-transform 0.3s ease-out;
+        transition: transform 0.3s ease-out;
+      }
+
+      .navdrawer-container ul {
+        padding: 0;
+        margin: 0;
+        
+        list-style-type: none;
+      }
+
+      .navdrawer-container ul li a {
+        display: block;
+        
+        height: 60px;
+        
+        padding: 0 20px;
+        
+        line-height: 60px;
+        
+        text-decoration: none;
+
+        color: white;
+
+        -webkit-transition: background-color 0.2s ease-out;
+        transition: background-color 0.2s ease-out;
+      }
+
+      .navdrawer-container ul li {
+        border-bottom-style: solid;
+        border-width: 1px;
+        border-color: white;
+      }
+
+      .navdrawer-container ul li a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+
+      .navdrawer-container ul li a:focus {
+        background-color: rgba(255, 255, 255, 0.3);
+        outline: 0;
+      }
+
+      .navdrawer-container ul li a:active {
+        background-color: rgba(255, 255, 255, 0.4);
+      }
+
+      @media all and (min-width: 1200px) {
+        .navdrawer-container {
+          position: relative;
+          
+          width: 100%;
+          height: auto;
+          
+          margin-top: 130px;
+
+          -webkit-transform: none;
+          tranform: none;
+          
+          -webkit-transition: none;
+          transition: none;
+        }
+
+        .navdrawer-container ul {
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          
+          -ms-flex-direction: row;
+          -webkit-flex-direction: row;
+          flex-direction: row;
+        }
+        
+        .navdrawer-container ul li {
+          border: none;
+        }
+
+}
+}
+
+</style>
+</head>
+
+<body>
+	<header class="app-bar promote-layer">
+		<button class="menu">
+			<img src="http://www.gameteep.net/wp-content/uploads/2013/09/Despicable-Me-Minion-Rush-Summer-icon.jpg">
+			</button>
+		<h1 class="logo">Brazil's Beaches</h1>
+		<section class="app-bar-actions"><input class="search" placeholder="Search"> 
+			<button>
+				<img src="http://icons.iconarchive.com/icons/rafiqul-hassan/blogger/512/Search-icon.png">
+				</button>
+			</section>
+	</header>
+		<nav class="navdrawer-container promote-layer"><ul><li><a href="http://en.wikipedia.org/wiki/Recife" target="_blank">Recife</a></li><li><a href="http://en.wikipedia.org/wiki/Rio_de_Janeiro" target="_blank">Rio de Janeiro</a></li><li><a href="http://en.wikipedia.org/wiki/Morro_de_S%C3%A3o_Paulo" target="_blank">Morro de Sao Paulo</a></li></ul></nav><section class="main-content"></section>
+	<script>
+	var navdrawerContainer = document.querySelector('.navdrawer-container');
+
+      var appbarElement = document.querySelector('.app-bar');
+
+      var menuBtn = document.querySelector('.menu');
+      menuBtn.addEventListener('click', function() {
+        var isOpen = navdrawerContainer.classList.contains('open');
+        if(isOpen) {
+          appbarElement.classList.remove('open');
+          navdrawerContainer.classList.remove('open');
+        } else {
+          appbarElement.classList.add('open');
+          navdrawerContainer.classList.add('open');
+        }
+      }, true);</script><script>var menuBtn = document.querySelector('.menu');
+      menuBtn.addEventListener('click', function() {
+        sampleCompleted('appbar-navdrawer-sample1.html-menubtnclick');
+      }, true);</script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-24532603-1');ga('send','pageview');
+
+    var isCompleted = {};
+    function sampleCompleted(sampleName){
+      if (ga && !isCompleted.hasOwnProperty(sampleName)) {
+        ga('send', 'event', 'WebCentralSample', sampleName, 'completed'); 
+        isCompleted[sampleName] = true;
+      }
+    }</script>
+
+
+<div class="city">
+
+<a href="http://en.wikipedia.org/wiki/Recife">Recife</a>
+<img class="w" src="http://msalx.viajeaqui.abril.com.br/2012/09/13/1244/5tY2z/praia-de-boa-viagem_rafa-medeiros_prefeitura-do-recife.jpeg?1347551424">
+
+</div>
+<div class="city">
+<a href="http://en.wikipedia.org/wiki/Rio_de_Janeiro">Rio de Janeiro</a>
+<img class="w" src="http://1.bp.blogspot.com/--Au6v1YNGIM/T1lFlMGbikI/AAAAAAAAAS8/2F2_eH3r-iI/s1600/copacabana-beach-rio-de-janeiro-1440x900.jpg">
+
+</div>
+<div class="city">
+
+<a href="http://en.wikipedia.org/wiki/Morro_de_S%C3%A3o_Paulo">Morro de Sao Paulo</a>
+<img class="w" src="http://blog.morrodesaopaulobahiabrasil.com/wp-content/uploads/2014/10/segunda-praia.jpg">
+
+</div>
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1>"> -->
+</body>
+</html>

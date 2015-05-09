@@ -1,0 +1,193 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+@import "compass/css3";
+
+$widthSize:100%;
+$color:black;
+
+
+@mixin text-align($center: center){
+	text-align:$center;
+}
+input[type="text"] {
+  @include input-placeholder {
+    color: #bfbfbf;
+    font-style: italic;
+  }
+}
+.gradient-example {
+  width: 80px;
+  height: 80px;
+  background: purple;
+  margin: 1em 1em 0 0;
+}
+#h-gradient {
+  @include background-image(linear-gradient(to right, white, #dddddd));
+}
+body{
+	background:$color;
+
+}
+.has-custom-shadow {
+  @include text-shadow(rgba(blue, 0.2) 1px 1px 0, rgba(blue, 0.2) 2px 2px 0, rgba(blue, 0.2) 3px 3px 0);
+
+}
+.container {
+  perspective: 50px;
+  border: 1px solid black;
+}
+.transformed {
+  transform: rotateY(50deg);
+  background-color: pink;
+}
+.child {
+  transform-origin: top left;
+  transform: rotateX(40deg);
+  background-color: purple;
+}
+header{
+	
+	margin:20px;
+	table{
+	width: $widthSize;
+	border: double;
+	table-layout:fixed;
+	@include text-align;
+		@include text-align(center);
+
+	}
+	
+	h1,h3{
+		text-align:center;
+		default-rotate:45deg;
+	}
+
+}
+@extends .h1;
+h2{
+	text-align:center;
+
+}
+.box-shadow-example div {
+  width: 550px;
+  height: 100px;
+  background: silver;
+  margin: 20px;
+  padding: 10px;
+  
+}
+
+#box-shadow-custom-multiple {
+  @include box-shadow(rgba(red, 0.7) 0 0 25px, rgba(white, 0.4) 0 0 3px 1px inset);
+}
+table{
+	width:500px;
+
+}
+
+ul{
+	font-size: 20px;
+	margin:60px;
+
+}
+img{
+	height: 200px;
+	width: 200px;
+
+	
+}
+nav {
+    $flex-legacy-enabled: true;
+    ul {
+      padding: 0;
+      margin: -.5em;
+      min-width: 100%; /* fix for old Firefox */
+      @include display-flex(flex);
+    }
+ 
+    li {
+      background: #FF00CC;
+      margin: .5em;
+      display: inline-block; /* non-flexbox browsers */
+      //@include flex(1 1 30%);
+      @include flex-grow(50%);
+    }
+    $flex-legacy-enabled: false;
+ }
+a:link{
+	color:blue;
+}
+a:visited{
+	color:purple;
+}
+a:hover{
+	color:yellow;
+}
+a:active{
+	color:red;
+}
+
+.border-radius-example {
+  width: 400px;
+  height: 20px;
+  background: purple;
+  margin: 20px;
+  padding: 5px;
+  color: white;
+
+
+}
+
+div#b {
+    position: fixed;
+    top:160px;
+    right:0;
+    width: 400px;
+    height: 200px;
+//background-color: red;
+    background: url("http://www.allgraphics123.com/graphics/smile/smile07.gif") 0 0 no-repeat;
+
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */ 
+    animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes mymove {
+    0%   {top: 160px; right: 0px}
+    25%  {top: 200px; right: 100px}
+    75%  {top: 50px}
+    100% {top: 100px;}
+}
+
+
+@keyframes mymove {
+    0%   {top: 160px; right: 0px}
+    25%  {top: 200px; right: 100px}
+    75%  {top: 50px}
+    100% {top: 100px;}
+}
+
+
+#border-radius-top-right {
+  @include border-top-right-radius(25px);
+}
+.example {
+  padding: 2em;
+  div {
+    background-color: pink;
+    border: 10px solid rgba(255, 0, 0, 0.5);
+    padding: 3px;
+    text-align: center;
+    margin-bottom: 2em;
+}
+#border-box {
+    @include background-clip(border-box); 
+}
+
+ 
+
+}

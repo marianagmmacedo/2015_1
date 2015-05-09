@@ -1,0 +1,19 @@
+<html>
+<head><title>JavaScript</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var random = Math.random();
+		if(random >= 0 && random < 0.5){
+			document.write("<strong>A random number between 0 and less than 0.5.</strong><br /> ");
+			document.write(random + " is a decimal number between 0 and less than 0.5. <br /> ");
+		}else{
+			if(random >= 0.5 && random < 1){
+				document.write("<strong>A random number between 0.5 and less than 1.</strong> <br /> ");
+				document.write(random + " is a decimal number between 0.5 and less than 1.<br /> ");
+			}
+		}
+		document.write("We are using random number of the Math object");
+	</script>
+</body>
+</html>

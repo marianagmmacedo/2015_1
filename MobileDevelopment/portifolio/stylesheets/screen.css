@@ -1,0 +1,540 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 8, ../sass/screen.scss */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+  box-sizing: border-box;
+  overflow: scroll;
+}
+/* line 16, ../sass/screen.scss */
+body .footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  color: white;
+}
+
+@media screen and (max-width: 1170px) {
+  /* line 31, ../sass/screen.scss */
+  .app-bar.open {
+    -webkit-transform: translate(27%, 0);
+    transform: translate(27%, 0);
+  }
+
+  /* line 37, ../sass/screen.scss */
+  .activities {
+    position: relative;
+    color: white;
+    float: right;
+    width: 70%;
+    top: 8%;
+  }
+  /* line 44, ../sass/screen.scss */
+  .activities li:before {
+    content: "• ";
+    color: white;
+  }
+
+  /* line 51, ../sass/screen.scss */
+  .publications {
+    position: relative;
+    color: white;
+    float: right;
+    text-align: center;
+    float: right;
+    width: 70%;
+    top: 8%;
+  }
+  /* line 58, ../sass/screen.scss */
+  .publications li:before {
+    content: "• ";
+    color: white;
+    text-size: 24px;
+  }
+
+  /* line 68, ../sass/screen.scss */
+  .academicprojects {
+    position: relative;
+    color: white;
+    float: right;
+    width: 70%;
+    top: 10%;
+  }
+  /* line 73, ../sass/screen.scss */
+  .academicprojects li {
+    font-style: italic;
+  }
+  /* line 78, ../sass/screen.scss */
+  .academicprojects li:before {
+    margin-left: 20px;
+    content: "• ";
+    color: white;
+    font-weight: none;
+  }
+
+  /* line 88, ../sass/screen.scss */
+  .education {
+    position: relative;
+    margin-top: 14%;
+    padding: 5%;
+    float: right;
+    width: 60%;
+  }
+  /* line 103, ../sass/screen.scss */
+  .education table td, .education table tr {
+    text-size: 8px;
+    color: white;
+    top: 300px;
+  }
+
+  /* line 113, ../sass/screen.scss */
+  .languages {
+    position: fixed;
+    top: 10%;
+    margin: 2%;
+    padding: 2%;
+    float: right;
+    width: 70%;
+    font-weight: bold;
+    color: white;
+    font-family: "Arial";
+  }
+  /* line 127, ../sass/screen.scss */
+  .languages table {
+    color: white;
+  }
+
+  /* line 131, ../sass/screen.scss */
+  .technicalskills1 {
+    position: relative;
+    top: 10%;
+    float: right;
+    width: 30%;
+    color: white;
+  }
+  /* line 140, ../sass/screen.scss */
+  .technicalskills1 li:before {
+    content: "• ";
+    color: white;
+  }
+
+  /* line 146, ../sass/screen.scss */
+  .technicalskills2 {
+    position: relative;
+    top: 10%;
+    float: right;
+    width: 30%;
+    color: white;
+  }
+  /* line 155, ../sass/screen.scss */
+  .technicalskills2 li:before {
+    content: "• ";
+    color: white;
+  }
+
+  /* line 161, ../sass/screen.scss */
+  .app-bar {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
+@media all and (min-width: 1200px) {
+  /* line 188, ../sass/screen.scss */
+  .activities {
+    position: relative;
+    color: white;
+    left: 10%;
+    width: 70%;
+  }
+  /* line 193, ../sass/screen.scss */
+  .activities li:before {
+    content: "• ";
+    color: white;
+  }
+
+  /* line 199, ../sass/screen.scss */
+  .technicalskills1 {
+    position: relative;
+    left: 10%;
+    top: 3%;
+    color: white;
+    float: left;
+  }
+  /* line 206, ../sass/screen.scss */
+  .technicalskills1 li:before {
+    content: "• ";
+    color: white;
+  }
+
+  /* line 211, ../sass/screen.scss */
+  .technicalskills2 {
+    position: relative;
+    left: 50%;
+    top: 5%;
+    color: white;
+  }
+  /* line 218, ../sass/screen.scss */
+  .technicalskills2 li:before {
+    content: "• ";
+    color: white;
+  }
+
+  /* line 223, ../sass/screen.scss */
+  .publications {
+    position: relative;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    color: white;
+  }
+  /* line 229, ../sass/screen.scss */
+  .publications li:before {
+    content: "• ";
+    color: white;
+    text-size: 24px;
+  }
+
+  /* line 237, ../sass/screen.scss */
+  .academicprojects {
+    position: relative;
+    color: white;
+    width: 60%;
+    left: 5%;
+  }
+  /* line 242, ../sass/screen.scss */
+  .academicprojects li:before {
+    margin-left: 1%;
+    content: "• ";
+    color: white;
+    font-weight: none;
+  }
+
+  /* line 249, ../sass/screen.scss */
+  .education {
+    position: fixed;
+    top: 30%;
+    left: 5%;
+    width: 80%;
+  }
+  /* line 261, ../sass/screen.scss */
+  .education table td, .education table tr {
+    text-size: 8px;
+    color: white;
+    margin: 5px;
+  }
+
+  /* line 269, ../sass/screen.scss */
+  .languages {
+    position: fixed;
+    margin: 2%;
+    padding: 2%;
+    color: white;
+  }
+  /* line 279, ../sass/screen.scss */
+  .languages table {
+    color: white;
+  }
+}
+@media all and (min-width: 1200px) {
+  /* line 286, ../sass/screen.scss */
+  body {
+    padding: 10px;
+  }
+
+  /* line 290, ../sass/screen.scss */
+  .app-bar {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  /* line 310, ../sass/screen.scss */
+  .app-bar .logo {
+    float: left;
+    margin: 0;
+    font-size: 70px;
+    line-height: 100px;
+  }
+
+  /* line 319, ../sass/screen.scss */
+  .app-bar-actions {
+    float: right;
+    margin: 20px 0;
+  }
+
+  /* line 325, ../sass/screen.scss */
+  .app-bar:after {
+    content: ' ';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+  }
+
+  /* line 337, ../sass/screen.scss */
+  button.menu {
+    display: none;
+  }
+
+  /* line 341, ../sass/screen.scss */
+  nav {
+    display: block;
+    margin-top: 130px;
+  }
+}
+/* line 354, ../sass/screen.scss */
+.app-bar.open {
+  -webkit-transform: translate(27%, 0);
+  transform: translate(27%, 0);
+}
+
+/* line 361, ../sass/screen.scss */
+.app-bar .logo {
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  font-size: 20px;
+  line-height: 60px;
+  margin: 0 16px;
+  color: #fefefe;
+  float: none;
+  max-width: none;
+}
+
+/* line 377, ../sass/screen.scss */
+.app-bar .logo a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: normal;
+}
+
+/* line 383, ../sass/screen.scss */
+.app-bar-actions {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+/* line 393, ../sass/screen.scss */
+.app-bar button {
+  width: 60px;
+  height: 60px;
+  background-image: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+}
+
+/* line 408, ../sass/screen.scss */
+.app-bar button img {
+  width: 50px;
+  height: 50px;
+}
+
+/* line 413, ../sass/screen.scss */
+.app-bar button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* line 417, ../sass/screen.scss */
+.app-bar button:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  outline: 0;
+}
+
+/* line 422, ../sass/screen.scss */
+.app-bar button:active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* line 428, ../sass/screen.scss */
+.promote-layer {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* line 433, ../sass/screen.scss */
+.navdrawer-container {
+  /*position: fixed;*/
+  position: absolute;
+  width: 250px;
+  color: #fefefe;
+  -webkit-transform: translate(-250px, 0);
+  transform: translate(-250px, 0);
+}
+
+/* line 449, ../sass/screen.scss */
+.navdrawer-container.open {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  width: 27%;
+  height: 100%;
+}
+
+/* line 463, ../sass/screen.scss */
+.app-bar, .navdrawer-container {
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+
+/* line 468, ../sass/screen.scss */
+.navdrawer-container ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* line 475, ../sass/screen.scss */
+.navdrawer-container ul li a {
+  display: block;
+  height: 60px;
+  padding: 0 20px;
+  text-align: center;
+  line-height: 60px;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+}
+
+/* line 492, ../sass/screen.scss */
+.navdrawer-container ul li {
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: white;
+}
+
+/* line 498, ../sass/screen.scss */
+.navdrawer-container ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* line 502, ../sass/screen.scss */
+.navdrawer-container ul li a:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+  outline: 0;
+}
+
+/* line 507, ../sass/screen.scss */
+.navdrawer-container ul li a:active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+@media all and (min-width: 1200px) {
+  /* line 512, ../sass/screen.scss */
+  .navdrawer-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    -webkit-transform: none;
+    tranform: none;
+    -webkit-transition: none;
+    transition: none;
+  }
+
+  /* line 527, ../sass/screen.scss */
+  .navdrawer-container ul {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+  }
+
+  /* line 537, ../sass/screen.scss */
+  .navdrawer-container ul li {
+    border: none;
+  }
+}

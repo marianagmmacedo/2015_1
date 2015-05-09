@@ -1,0 +1,20 @@
+<html>
+<head><title>JavaScript</title>
+</head>
+<body>
+	<script type="text/javascript">
+	var r = 255;
+	var g = 0;
+	var b = 0;
+	var myfontsize = 18;
+	for(var i=0; i<9; i++){
+		var col = "rgb(" + r + "," + g + "," + b + ")";
+		color = col;
+		document.write('<span style="font-size:'+myfontsize+'pt;color:'+color+'">Hello</span>');
+		document.write("<br />");
+		r = r - 35; g += 35;
+		myfontsize +=2;
+	}
+	</script>
+</body>
+</html>

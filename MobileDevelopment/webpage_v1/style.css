@@ -1,0 +1,41 @@
+body {
+  background: pink; }
+
+header {
+  margin: 20px; }
+  header table {
+    width: 100%;
+    border: double;
+    table-layout: fixed;
+    text-align: center; }
+  header h1, header h3 {
+    text-align: center; }
+
+@extends .h1;
+h2 {
+  text-align: center; }
+
+table {
+  width: 500px; }
+
+ul {
+  font-size: 20px;
+  margin: 60px; }
+
+img {
+  height: 200px;
+  width: 200px; }
+
+a:link {
+  color: blue; }
+
+a:visited {
+  color: purple; }
+
+a:hover {
+  color: yellow; }
+
+a:active {
+  color: red; }
+
+/*# sourceMappingURL=style.css.map */

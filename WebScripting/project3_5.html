@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Project</title>
+<style>
+	body{
+		color:purple;
+		background-color:pink;
+	}
+</style>
+</head>
+<body>
+	<script type="text/javascript">
+		var number = Math.floor(Math.random()*(6 - 1)) + 1;
+		var fatorial = 1;
+		document.write("<center> <br /><b>Number is</b> " + number+ "</center>");
+		for(var i = number; i>=1; i--){
+			fatorial *= i;
+		}
+		document.write("<center> <br /> <b>Fatorial is</b> " + fatorial + "</center>");
+		document.write("<center> <br /><br /> <em>Fatorial Table</em><br /><br /><table border='1' width='100px'><tr><td>1</td><td>1</td></tr><tr><td>2</td><td>2</td></tr><tr><td>3</td><td>6</td></tr><tr><td>4</td><td>24</td></tr><tr><td>5</td><td>120</td></tr></table> </center>");
+	</script>
+</body>
+</html>
+

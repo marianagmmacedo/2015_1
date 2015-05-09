@@ -1,0 +1,61 @@
+<html>
+<head>
+	<title>Untitled</title>
+</head>
+
+<body>
+<script type="text/javascript">
+function operate()
+{
+	var aux = 0;
+	if (!plus.checked && !minus.checked &&!star.checked &&!backslash.checked) {
+		alert("Please check some operation");
+	}
+	if(document.getElementById("op1").value=="" || document.getElementById("op2").value == ""){
+		alert("Please write all operators");
+	}
+  if(plus.checked){
+  	aux = parseFloat(document.getElementById("op1").value) + parseFloat(document.getElementById("op2").value);
+  }
+  if(minus.checked){
+  	aux = parseFloat(document.getElementById("op1").value) - parseFloat(document.getElementById("op2").value);
+  }
+  if(star.checked){
+  	aux = parseFloat(document.getElementById("op1").value) * parseFloat(document.getElementById("op2").value);
+  }
+  if(backslash.checked){
+  	
+    aux = parseFloat(document.getElementById("op1").value) / parseFloat(document.getElementById("op2").value);
+  }
+
+  result.value = aux;
+}
+</script>
+
+<form action="formhandler.php" method="post">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="radio" name="scale" id="plus" value="plus"> + <br>
+
+<input type="text" id="op1" name="op1" value="" tabindex="3" size="10" maxlength="40" >
+
+<input type="radio" name="scale" id="minus" value="minus"> -
+
+<input type="text" id="op2" name="op2" value="" tabindex="3" size="10" maxlength="40" > 
+
+<input type="button" name="equal" id="equal" value="=" onclick = "operate()">
+
+<input type="text" id="result" name="result" value="" tabindex="3" size="10" maxlength="40" >
+<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+<input type="radio" name="scale" id="star" value="star"> *<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+<input type="radio" name="scale" id="backslash" value="backslash"> /<br> 
+</form>
+</body>
+</html>
+
