@@ -1,0 +1,99 @@
+<html>
+<head>
+	<!-- logo-->
+	<title>FuturApp</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../~mgmmacedo/futurapp/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery-2.1.3.js"></script>
+    <script src="../../~mgmmacedo/futurapp/bower_components/bootstrap/js/transition.js"></script>
+    <script src="../../~mgmmacedo/futurapp/bower_components/bootstrap/js/collapse.js"></script>
+	<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  	<link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+
+<script> 
+$(function(){
+  $("#header").load("header.html");
+  $("#profileInformation").load("profileInformation.html"); 
+  $("#technnicalskills").load("technnicalskills.html"); 
+  $("#interests").load("interests.html"); 
+  //$('textarea').autoResize();
+  $("#footer").load("footer.html"); 
+});
+</script>
+<script>
+function login(){
+    window.location = "profile.html";
+}
+function register(){
+    window.location = "register.html";
+}
+
+</script>
+</head>
+<body>
+<div id="header"></div>
+<br />
+<br />
+
+<div class="container">
+
+  <div class="page-header">
+    <h1>FuturApp <small>Profile</small></h1>
+  </div>
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Information 
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        <fieldset id="boxInformation">
+          <div id="profileInformation"></div>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Technnical Skills
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+         <div id="technnicalskills"></div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Interests
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        <div id="interests"></div>
+      </div>
+    </div>
+  
+  </div>
+</div>
+</div>
+
+<div id="footer"></div>
+
+ 
+
+</body>
+</html>

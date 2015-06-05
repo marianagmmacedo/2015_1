@@ -1,0 +1,170 @@
+<html>
+<head>
+  <!-- logo-->
+  <title>FuturApp</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../~mgmmacedo/futurapp/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery-2.1.3.js"></script>
+    <script src="../../~mgmmacedo/futurapp/bower_components/bootstrap/js/transition.js"></script>
+    <script src="../../~mgmmacedo/futurapp/bower_components/bootstrap/js/collapse.js"></script>
+  <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+
+<script> 
+$(function(){
+
+  $("#profilePhoto").load("profilePhoto.html");
+  
+  $("#header").load("header.html");
+  
+  $("#one").click(function(){$("#profileInformation").load("profileInformation.html");}); 
+  
+  $("#two").click(function(){$("#interests").load("interests.html");});
+
+  $("#three").click(function(){$("#skills").load("skills.html");}); 
+  
+  $("#four").click(function(){$("#education1").load("education.html");}); 
+
+  $("#five").click(function(){$("#workexperience").load("workexperience.html");}); 
+
+  $("#six").click(function(){$("#certification").load("certification.html");}); 
+
+  $("#seven").click(function(){$("#course").load("course.html");}); 
+
+  $("#eight").click(function(){$("#language").load("language.html");}); 
+
+  
+  //$('textarea').autoResize();
+  $("#footer").load("footer.html"); 
+  //$(selector).click(function)
+
+});
+</script>
+
+</head>
+<body>
+<div id="header"></div>
+<br /><br /><br /><br />
+<div id="profilePhoto"></div>
+<br /><br /><br />
+<form method="post" action="mailto:mg29428n@pace.edu">
+<div class="bs-example">
+    <p>
+      <a class="btn btn-primary" id="one" data-toggle="collapse" href="#collapseExample1" aria-expanded="true" aria-controls="collapseExample"> Personal Information </a>
+      <div class="collapse" id="collapseExample1" aria-expanded="true">
+        <div class="well">
+          <fieldset id="boxInformation">
+            <div id="profileInformation"></div>
+          </fieldset>
+        </div>
+       </div>
+    </p>
+    
+</div>
+<div class="bs-example">
+    <p>
+      <a class="btn btn-primary" id="two" data-toggle="collapse" href="#collapseExample2" aria-expanded="true" aria-controls="collapseExample"> Interests </a>
+      <div class="collapse" id="collapseExample2" aria-expanded="true">
+        <div class="well">
+          <fieldset>
+            <div id="interests"></div>
+          </fieldset>
+        </div>
+       </div>
+    </p>
+    
+</div>
+<div class="bs-example">
+    <p>
+      <a class="btn btn-primary" id="three" data-toggle="collapse" href="#collapseExample3" aria-expanded="true" aria-controls="collapseExample"> Technnical Skills </a>
+      <div class="collapse" id="collapseExample3" aria-expanded="true">
+        <div class="well">
+          <fieldset>
+            <div id="skills"></div>
+          </fieldset>
+        </div>
+       </div>
+    </p>
+    
+</div>
+<div class="bs-example">
+    <p>
+      <a class="btn btn-primary" id="four" data-toggle="collapse" href="#collapseExample4" aria-expanded="true" aria-controls="collapseExample"> Education </a>
+      <div class="collapse" id="collapseExample4" aria-expanded="true">
+        <div class="well">
+          <fieldset>
+            <div id="education1"></div>
+          </fieldset> 
+        </div>
+       </div>
+    </p>
+    
+</div>
+<div class="bs-example">
+    <p>
+      <a class="btn btn-primary" id="five" data-toggle="collapse" href="#collapseExample5" aria-expanded="true" aria-controls="collapseExample"> Work Experience </a>
+      <div class="collapse" id="collapseExample5" aria-expanded="true">
+        <div class="well">
+          
+        
+          <fieldset>
+            <div id="workexperience"></div>
+          </fieldset>
+        </div>
+       </div>
+    </p>
+    
+</div>
+<div class="bs-example">
+    <p>
+      <a class="btn btn-primary" id="six" data-toggle="collapse" href="#collapseExample6" aria-expanded="true" aria-controls="collapseExample"> Certification </a>
+      <div class="collapse" id="collapseExample6" aria-expanded="true">
+        <div class="well">
+        
+          <fieldset>
+            <div id="certification"></div>
+          </fieldset>
+        </div>
+       </div>
+    </p>
+    
+</div>
+<div class="bs-example">
+    <p>
+      <a class="btn btn-primary" id="seven" data-toggle="collapse" href="#collapseExample7" aria-expanded="true" aria-controls="collapseExample"> Course </a>
+      <div class="collapse" id="collapseExample7" aria-expanded="true">
+        <div class="well">
+          
+        
+          <fieldset>
+            <div id="course"></div>
+          </fieldset>
+        </div>
+       </div>
+    </p>
+    
+</div>
+<div class="bs-example">
+    <p>
+      <a class="btn btn-primary" id="eight" data-toggle="collapse" href="#collapseExample8" aria-expanded="true" aria-controls="collapseExample"> Language </a>
+      <div class="collapse" id="collapseExample8" aria-expanded="true">
+        <div class="well">
+          <fieldset>
+            <div id="language"></div>
+          </fieldset>
+        </div>
+       </div>
+    </p>
+    
+</div>
+</form>
+
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<div id="footer"></div>
+
+
+</body>
+</html>

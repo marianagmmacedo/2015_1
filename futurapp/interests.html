@@ -1,0 +1,31 @@
+<div id="interests">
+<script>
+function save () {
+    // body...
+}
+function addInterests(divName, inputType){
+     var newdiv = document.createElement('div');
+            
+     switch(inputType) {
+          case 'text':
+               newdiv.innerHTML =  " <span class='infoInput'>Interest<input type='text' placeholder=" + divName + "></span>";
+               
+               break;
+          
+          }
+          
+     document.getElementById(divName).appendChild(newdiv);
+}
+
+
+</script>
+  <ul class="input-list style-list clearfix">
+    	<li>
+            <div id="Interest">
+                <span class="infoInput">Interest <input type="text" placeholder="Interest"></span>
+            </div>
+            <input type="button" value="Add Interests" onClick="addInterests('Interest', 'text')">
+            <input type="button" value="Save" onClick="save()">
+    	</li>
+  </ul>
+</div>

@@ -1,0 +1,149 @@
+<script>
+var counterText = 1;
+var counterRadioButton = 1;
+var counterCheckBox = 1;
+var counterTextArea = 1;
+var counterUrl= 1;
+function addAllInputs(divName, inputType){
+     var newdiv = document.createElement('div');
+     //<span class="infoInput">Website :<input type="url" placeholder="website">
+            
+     switch(inputType) {
+          case 'text':
+               newdiv.innerHTML = divName + " <span class='infoInput'><input type='text' placeholder=" + divName + " name='myInputs[]'></span>";
+               counterText++;
+               break;
+          case 'url':
+               newdiv.innerHTML = divName + " <span class='infoInput'><input type='url' placeholder=" + divName + " name='myInputs[]'></span>";
+               counterText++;
+               break;
+          case 'radio':
+               newdiv.innerHTML = divName + " <span class='infoInput'><input type='radio' placeholder=" + divName + " name='myRadioButtons[]'></span>";
+               counterRadioButton++;
+               break;
+          case 'checkbox':
+               newdiv.innerHTML = divName + " <span class='infoInput'><input type='checkbox' placeholder=" + divName + " name='myCheckBoxes[]'></span>";
+               counterCheckBox++;
+               break;
+          case 'textarea':
+           newdiv.innerHTML = " <textarea placeholder=" + divName + " cols='30' rows='5'></textarea>";
+               counterTextArea++;
+               break;
+          }
+          //<textarea placeholder="Details" cols="30" rows="5"></textarea>
+     document.getElementById(divName).appendChild(newdiv);
+}
+
+
+function addEducation(Name, Start, End, Degree, text, date){
+    addAllInputs(Name, text);
+    addAllInputs(Start, date);
+    addAllInputs(End, date);
+    addAllInputs(Degree, text);
+}
+
+
+</script>
+<script>
+// var counterText = 1;
+// var counterRadioButton = 1;
+// var counterCheckBox = 1;
+// var counterTextArea = 1;
+// var counterUrl= 1;
+function addSkills(divName, inputType){
+     var newdiv = document.createElement('div');
+     //<span class="infoInput">Website :<input type="url" placeholder="website">
+            
+     switch(inputType) {
+          case 'text':
+                newdiv.innerHTML =  " <span class='infoInput'>Skill<input type='text' placeholder=" + divName + "></span>";
+                 break;
+      }
+       document.getElementById(divName).appendChild(newdiv);
+               //counterText++;
+              
+          // case 'url':
+          //      newdiv.innerHTML = divName + " <span class='infoInput'><input type='url' placeholder=" + divName + " name='myInputs[]'></span>";
+          //      counterText++;
+          //      break;
+          // case 'radio':
+          //      newdiv.innerHTML = divName + " <span class='infoInput'><input type='radio' placeholder=" + divName + " name='myRadioButtons[]'></span>";
+          //      counterRadioButton++;
+          //      break;
+          // case 'checkbox':
+          //      newdiv.innerHTML = divName + " <span class='infoInput'><input type='checkbox' placeholder=" + divName + " name='myCheckBoxes[]'></span>";
+          //      counterCheckBox++;
+          //      break;
+          // case 'textarea':
+          //  newdiv.innerHTML = " <textarea placeholder=" + divName + " cols='30' rows='5'></textarea>";
+          //      counterTextArea++;
+          //      break;
+        
+          //<textarea placeholder="Details" cols="30" rows="5"></textarea>
+    
+}
+
+
+
+
+
+
+
+
+<li>
+        
+    	<br /><br /> Education :<br /><br />
+        
+        <div id="Start Date">
+            
+        </div>
+        <div id="End Date">
+            </div>
+        <div id="Degree">
+            
+        </div>
+
+        <input type="button" value="Add Education" onClick="addEducation('Institution','Start Date','End Date','Degree','text', 'date')">
+    </li>
+     <li>
+        <div id="Work Experience">
+            <br /><br />Work Experience  <br /><br />
+            <span class="infoInput">Name of institution <input type="text" placeholder="University or School"></span>
+            <span class="infoInput">Job Name <input type="text" placeholder="Country"></span>
+            <br /><br />
+            <span class="infoInput">Start Date <input type="date"></span>
+            <span class="infoInput">End Date <input type="date"></span>
+            <br /><br />
+           <textarea placeholder="Details" cols="30" rows="5"></textarea>
+        </div>
+        <br /><br />Add Work Experience<br /><br />
+        <input type="button" value="Add Work Experience" onClick="addAllInputs('Certification', 'text');addAllInputs('Certification', 'textarea')">
+    </li>
+    <li>
+        <div id="Certification">
+        	<span class="infoInput">Certification <input type="text" placeholder="Certification"></span>
+             <br /><br />
+            <textarea placeholder="Certification" cols="30" rows="5"></textarea>
+        </div>
+        <br /><br />
+        <input type="button" value="Add Certification" onClick="addAllInputs('Certification', 'text');addAllInputs('Certification', 'textarea')">
+    </li>
+     <li>
+        <div id="Course">
+            <span class="infoInput">Course <input type="text" placeholder="Name"></span>
+            <textarea placeholder="Course" cols="30" rows="5"></textarea>
+        </div>
+        <input type="button" value="Add Courses" onClick="addAllInputs('Course', 'text');addAllInputs('Course', 'textarea');">
+        
+    </li>
+    
+    <li>
+        <div id="Website">
+            <span class="infoInput">Website <input type="url" placeholder="Website"></span>
+        </div>
+        <input type="button" value="Add Websites" onClick="addAllInputs('Website', 'url')">
+    </li>
+    <li>
+        <br />
+        <textarea placeholder="Summary" cols="30" rows="5"></textarea>
+    </li>

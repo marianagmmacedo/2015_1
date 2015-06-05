@@ -1,0 +1,30 @@
+<div id="skills">
+<script>
+function save () {
+    // body...
+}
+function addSkills(divName, inputType){
+     var newdiv = document.createElement('div');
+         
+     switch(inputType) {
+          case 'text':
+                newdiv.innerHTML =  " <span class='infoInput'>Skill<input type='text' placeholder=" + divName + "></span>";
+                 break;
+      }
+       document.getElementById(divName).appendChild(newdiv);
+           
+    
+}
+
+
+</script>
+<ul class="input-list style-list clearfix">
+	<li>
+        <div id="Skill">
+            <span class="infoInput">Skill <input type="text" placeholder="Skill"></span>
+        </div>
+        <input type="button" value="Add Skills" onClick="addSkills('Skill', 'text')">
+        <input type="button" value="Save" onClick="save()">
+	</li>
+</ul>
+</div>

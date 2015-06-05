@@ -1,0 +1,74 @@
+<div id="workexperience">
+<script>
+function save () {
+    // body...
+}
+function addWorkExperience(){
+     
+     var newdiv = document.createElement('div');
+      newdiv.innerHTML = "<br /> <br /> Work Experience <br /> <br />";             
+      var divName = 'Title' ;
+      newdiv.innerHTML += "<li><span class='infoInput'>" + divName +"</span><input type='text' placeholder=" + divName + " ></li>";
+      divName = 'Company' ;
+      newdiv.innerHTML += "<li><span class='infoInput'>" + divName +"</span><input type='text' placeholder=" + divName + " ></li>";
+      divName = 'StartDate' ;
+      newdiv.innerHTML += "<li><span class='infoInput'>" + divName +"</span><input type='date' placeholder=" + divName + " ></span></li>";
+      divName = 'EndDate' ;
+      newdiv.innerHTML += "<li><span class='infoInput'>" + divName +"</span><input type='date' placeholder=" + divName + " ></span></li>";
+      divName = 'Details' ;  
+      newdiv.innerHTML += "<li><textarea placeholder=" + divName + " cols='30' rows='5'></textarea></li>";
+
+
+          //<textarea placeholder="Details" cols="30" rows="5"></textarea>
+     document.getElementById('WorkExperience').appendChild(newdiv);
+    
+}
+
+</script>
+
+
+  <ul class="input-list style-list clearfix">
+        
+        <div id="WorkExperience">
+            <br />
+          <li>
+              <div id="Title">
+              <span class="infoInput">Title </span><input type="text" placeholder="Title"></div>
+          </li>
+
+          <li>
+              <div id="Company">
+              <span class="infoInput">Company </span><input type="text" placeholder="Company">
+            </div>
+          </li>
+
+          <li>
+              <div id="StartDate">
+              <span class="infoInput">StartDate </span><input type="date">
+              </div>
+          </li>
+
+          <li>
+              <div id="EndDate">
+              <span class="infoInput">EndDate </span><input type="date">
+              </div>
+          </li>
+
+           <li>
+              <div id="Details">
+                <textarea placeholder="Details" cols="30" rows="5"></textarea>
+              </div>
+          </li> 
+          
+          </div>  
+          <li>
+           
+              <input type="button" value="Add Work Experience" onClick="addWorkExperience()">
+              <input type="button" value="Save" onClick="save()">
+            
+            <br />
+          </li>
+  </ul>
+
+
+</div>

@@ -1,0 +1,65 @@
+<html>
+<head>
+	<title>FuturApp</title>
+    <script src="http://code.jquery.com/jquery-2.1.3.js"></script>
+	<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  	<link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+
+<script> 
+	$(function(){
+		$("#header").load("headerHome.html"); 
+		$("#aboutus").load("aboutus.html");
+		$("#contactus").load("contactus.html");
+		$("#footer").load("footer.html"); 
+
+
+	});
+</script>
+<script>
+	function login(){
+	    window.location = "profile.html";
+	}
+	function register(){
+	    window.location = "register.html";
+	}
+</script>
+</head>
+<body>
+	<div id="header"></div>
+	<br /><br /><br /><br />
+	<center>
+	<fieldset id="login">
+		<center>
+		<table>
+		<tr>
+		<td><label><b>Name:</b></label></td><td><input type = "text" id = "newName" size="25"></td>
+		</tr>
+		<tr>
+		<td><label><b>Password:</b></label></td><td><input type = "password" id="newPassword" size="25"></td>
+		</tr>  
+		</table>
+		</center>
+	
+		<br />
+		<center>
+		<input type = "submit" value = "Register" onclick = "register()">
+		<input type="submit" value="Login" onclick = "login()">
+		</center>
+
+
+	</fieldset>
+	</center>
+	<br /><br /><br /><br />
+	<div id="aboutus"></div>
+
+	<br /><br /><br /><br />
+
+	<div id="contactus"></div>
+
+	<br /><br />
+
+	<div id="footer"></div>
+
+
+</body>
+</html>
